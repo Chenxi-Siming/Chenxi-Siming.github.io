@@ -13,7 +13,7 @@ body {
 .image-grid {
 	--gap: 16px;
 	--num-cols: 3;
-	--row-height: 230px;
+	--row-height: 30vh;
 
 	box-sizing: border-box;
 	padding: var(--gap);
@@ -56,7 +56,7 @@ body {
 
 .transition-image {
 	position: absolute;
-	top: 33vh;
+	top: 34vh;
 	left: 41vw;
 	height: 29vh;
 	opacity: 0;
