@@ -56,9 +56,10 @@ body {
 
 .transition-image {
 	position: absolute;
-	top: 34vh;
+	top: 33vh;
 	left: 40vw;
 	height: 30vh;
+	width: 50vw;
 	opacity: 0;
 	transition: opacity 1s ease;
 }
