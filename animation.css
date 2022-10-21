@@ -57,8 +57,8 @@ body {
 .transition-image {
 	position: absolute;
 	top: 34vh;
-	left: 41vw;
-	height: 29vh;
+	left: 40vw;
+	height: 30vh;
 	opacity: 0;
 	transition: opacity 1s ease;
 }
