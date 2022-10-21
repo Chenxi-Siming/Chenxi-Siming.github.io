@@ -1,0 +1,68 @@
+.beat {
+  animation: beat 1s infinite alternate;
+}
+
+@keyframes beat {
+	to { transform: scale(1.4); }
+}
+
+body {
+	margin: 0;
+}
+
+.image-grid {
+	--gap: 16px;
+	--num-cols: 3;
+	--row-height: 230px;
+
+	box-sizing: border-box;
+	padding: var(--gap);
+
+	display: grid;
+	grid-template-columns: repeat(var(--num-cols), 1fr);
+	grid-auto-rows: var(--row-height);
+	gap: var(--gap);
+}
+
+.image-grid>img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.image-grid-col-2 {
+	grid-column: span 2;	
+}
+
+.image-grid-row-2 {
+	grid-row: span 1;
+}
+
+.image-grid-col-3 {
+	grid-column: span 1;	
+}
+
+.image-grid-row-3 {
+	grid-row: span 2;
+}
+
+/* Anything udner 1024px */
+@media screen and (max-width: 1024px) {
+	.image-grid {
+		--num-cols: 2;
+		--row-height: 200px;
+	}
+}
+
+.transition-image {
+	position: absolute;
+	top: 260px;
+	left: 580px;
+	height: 30%;
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+
+.transition-image:hover {
+	opacity: 1;
+}

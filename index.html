@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <style type="text/css">
+      p, h1 {
+        text-align: center;
+      }
+    </style>
+    <script type="text/javascript">
+      window.onload = function() {
+        document.getElementById('question_mark').addEventListener('click', function (e) {
+          console.log("Clicked")
+        });
+        setInterval(function () {
+            $('#heart-beat').toggleClass('active');
+        }, 700);
+      };
+    </script>
+  </head>
+  <body style="background-color:#FDE3E6;">
+    <div class="image-grid">
+      <img class="image-grid-col-3 image-grid-row-3" src="8.jpeg">
+      <img src="1.jpeg"> 
+      <img src="0.jpeg">
+      <img class="image-grid-col-2 image-grid-row-2" src="letter.png">
+      <img src="2.jpeg">
+      <img src="5.jpeg">
+      <img src="3.jpeg">
+    </div>
+    <img class="transition-image" src="love.png">
+  </body>
+</html>
