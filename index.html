@@ -10,11 +10,11 @@
     </style>
     <script type="text/javascript">
       window.onload = function() {
-        document.getElementById('question_mark').addEventListener('click', function (e) {
-          console.log("Clicked")
+        document.body.addEventListener('click', function () {
+          window.location.href = 'hbd/hbd.html';
         });
         setInterval(function () {
-            $('#heart-beat').toggleClass('active');
+            document.getElementById('heart-beat').classList.toggle('active');
         }, 700);
       };
     </script>
