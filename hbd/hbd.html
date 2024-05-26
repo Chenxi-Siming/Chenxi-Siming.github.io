@@ -67,7 +67,7 @@
         const mainText = document.getElementById('mainText');
         const birthdayMusic = document.getElementById('birthdayMusic');
         const imageSources = [
-            'image2.png', 'image3.png', 'image4.png', 'image5.png', 'image6.png', 'image7.png', 
+            'image2.png', 'image3.png', 'image4.png', 'image5.png', 'image6.PNG', 'image7.png', 
             'image8.png', 'image9.png', 'image10.png', 'image11.png', 'image12.png', 'image13.png', 
             'image14.png', 'image15.png', 'image16.png', 'image17.png', 'image18.png'
         ];
@@ -114,7 +114,7 @@
         }
 
         mainText.addEventListener('click', () => {
-            if (imagesOnPage.size >= 15) {
+            if (imagesOnPage.size >= 18) {
                 const firstImage = document.querySelector('.floatingImage');
                 imagesOnPage.delete(firstImage.src);
                 document.body.removeChild(firstImage);
